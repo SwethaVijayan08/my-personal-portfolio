@@ -7,8 +7,7 @@ import Portfolio from './Portfolio';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* <App /> */}
-    <Portfolio/>
+    <App />
   </React.StrictMode>
 );
 

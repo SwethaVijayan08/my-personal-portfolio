@@ -2,6 +2,9 @@ import React , {useState}from "react";
 import { AiOutlineClose,AiOutlineMenu} from "react-icons/ai";
 
 const Navbar = () => {
+
+
+
     const[nav, setNav]= useState(false)
 
     const handleNav=() =>[
@@ -10,7 +13,7 @@ const Navbar = () => {
 
 
     return(
-        <div className="bg-white flex justify-between items-center max-w-[1240px] mx-auto h-24 px-4 text-l ">
+        <div className="text-gray-400 flex justify-between items-center max-w-[1240px] mx-auto h-24 px-4 text-lg">
 
             <h1 className="text-3xl font-bold primary-color ml-4">Swetha Vijayan
             </h1>
@@ -22,13 +25,15 @@ const Navbar = () => {
                 <li className='p-2'>Contact</li>
             </ul>
 
-            <div onclick={handleNav} className="block md:hidden">
-                {nav ? <AiOutlineClose size={20}/>:<AiOutlineMenu size={20}/>}
+            <div onClick={handleNav} className="block md:hidden">
+                {nav ? <AiOutlineClose size={20}/>:<AiOutlineMenu size={30}/>}
             </div>
-            <div className={nav ?'':"fixed left-[-100%]"}>
-                <h1 className="text-3xl font-bold primary-color ml-4">Swetha Vijayan
-                </h1>
-                <ul className="hidden md:flex">
+            <div className={nav ?'text-gray-300 fixed h-full left-0 top-0 w[60%] border-r border-r-gray-900 bg-[#202121] ease-in-out duration-500'
+                :"fixed left-[-100%]"}>
+                
+            <h1 className="text-3xl primary-color m-4">Swetha Vijayan
+            </h1>
+                <ul className="flex md:hidden flex-col">
                     <li className='p-2'>Home</li>
                     <li className='p-2'>About me</li>
                     <li className='p-2'>Projects</li>

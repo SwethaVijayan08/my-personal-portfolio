@@ -34,11 +34,11 @@ const Navbar = () => {
             <h1 className="text-3xl primary-color m-4">Swetha Vijayan
             </h1>
                 <ul className="flex md:hidden flex-col">
-                    <li className='p-2'>Home</li>
-                    <li className='p-2'>About me</li>
-                    <li className='p-2'>Projects</li>
-                    <li className='p-2'>Resume</li>
-                    <li className='p-2'>Contact</li>
+                    <li className='p-5'>Home</li>
+                    <li className='p-5'>About me</li>
+                    <li className='p-5'>Projects</li>
+                    <li className='p-5'>Resume</li>
+                    <li className='p-5'>Contact</li>
                 </ul>
             </div>
         </div>

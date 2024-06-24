@@ -8,7 +8,8 @@ const Swetha = () => {
       <div className='my-7 sm:my-0 bg-white max-w- [1200px] •h-[80vh] mx-auto flex flex-col-reverse sm:flex-row justify-center align-center' >
           <div className= 'bg-blue-300 flex-col my-auto mx-lauto'>
               <p className= 'md:text-5x1 sm:text-4xl text-xl font-bold text-gray-200'></p>
-              <h1 className= 'md:text-7xl sm:text-6xl text-4xl font-bold md:py-6'><TypeAnimation
+              <h1 className= 'md:text-7xl sm:text-6xl text-4xl font-bold md:py-6'>
+              <TypeAnimation
               sequence={[
                 "Frontend Dev",
                 1000, 

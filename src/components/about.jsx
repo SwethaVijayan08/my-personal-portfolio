@@ -1,9 +1,17 @@
 import React from 'react'
+import mybg from './mybg.jpg'
 
-const about = () => {
+
+const About = () => {
   return (
-    <div>about</div>
+    <div className='py-10 text-white bg-[#232325] h-auto'>
+        <div>
+            <div className=''>
+
+            </div>
+        </div>
+    </div>
   )
 }
 
-export default about
+export default About

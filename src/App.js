@@ -1,15 +1,15 @@
 import Navbar from './components/Navbar'
 import Swetha from './components/Swetha';
-import About from './components/about';
+import About from './components/About';
 
 
 function App() {
   return (
     <div>
-		<Navbar/>
-    <Swetha/>
-    <About/>
-	</div>
+      <Navbar/>
+      <Swetha/>
+      <About/>
+  	</div>
   );
 }
 

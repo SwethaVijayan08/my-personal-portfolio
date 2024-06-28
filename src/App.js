@@ -1,6 +1,10 @@
 import Navbar from './components/Navbar'
 import Swetha from './components/Swetha';
-import About from './components/About';
+import Projects from './components/Projects';
+import Projects2 from './components/Projects2';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+import Myabout from './components/Myabout';
 
 
 function App() {
@@ -8,7 +12,11 @@ function App() {
     <div>
       <Navbar/>
       <Swetha/>
-      <About/>
+      <Myabout/>
+      <Projects/>
+      <Projects2/>
+      <Contact/>
+      <Footer/>
   	</div>
   );
 }

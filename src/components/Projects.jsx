@@ -1,4 +1,8 @@
 import React from 'react'
+import Todo from './Todo.png'
+import wings from './wings.png'
+import quiz from './quiz.png'
+
 
 const Projects = () => {
   return (
@@ -10,30 +14,24 @@ const Projects = () => {
                         My<span>Projects</span>
                     </h2>
                     <p className='text-gray-600'>
-                        These are my Projects over the Year
+                        These are a few projects of mine
                     </p>
                 </div>
                 <div className='grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8'>
-                    <a href='/' className='group relative flex h-48 items-end shadow-lg md:h-80'>
-                        <img src='' loading='her' alt='' className='absolite inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110'/>
+                    <a href='https://github.com/SwethaVijayan08/TO-DO-List-App' className='group relative flex h-48 items-end shadow-lg md:h-80'>
+                        <img src={Todo} loading='her' alt='' className='absolite inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110'/>
                         <div className='pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50'>
                         </div>
                     </a>
 
-                    <a href='/' className='group relative flex h-48 items-end shadow-lg md:h-80'>
-                        <img src='' loading='her' alt='' className='absolite inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110'/>
+                    <a href='https://github.com/SwethaVijayan08/Quiz-app' className='group relative flex h-48 items-end shadow-lg md:h-80'>
+                        <img src={quiz} loading='her' alt='' className='absolite inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110'/>
                         <div className='pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50'>
                         </div>
                     </a>
 
-                    <a href='/' className='group relative flex h-48 items-end shadow-lg md:h-80'>
-                        <img src='' loading='her' alt='' className='absolite inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110'/>
-                        <div className='pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50'>
-                        </div>
-                    </a>
-
-                    <a href='/' className='group relative flex h-48 items-end shadow-lg md:h-80'>
-                        <img src='' loading='her' alt='' className='absolite inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110'/>
+                    <a href='https://github.com/jubinjacob03/wings_airlines' className='group relative flex h-48 items-end shadow-lg md:h-80'>
+                        <img src={wings} loading='her' alt='' className='absolite inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110'/>
                         <div className='pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50'>
                         </div>
                     </a>

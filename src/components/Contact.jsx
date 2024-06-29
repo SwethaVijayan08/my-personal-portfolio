@@ -1,6 +1,21 @@
 import React from 'react'
+import emailjs from 'emailjs-com';
+const SERVICE_ID= process.env.SERVICE_ID
+const TEMPLATE_ID= process.env.TEMPLATE_ID
+const PUBLIC_KEY= process.env.PUBLIC_KEY
 
 const Contact = () => {
+    const handleOnSubmit = (e) => {
+        e.preventDefault();
+        emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY)
+          .then((result) => {
+            alert('Message Sent Successfully')
+          }, (error) => {
+            console.log(error.text);
+            alert('Something went wrong!')
+          });
+        e.target.reset()
+      };
   return (
     <div className="flex justify-center my-5 h-full sm:h-[70vh] items-center"id='contact'>
         <div className="max-w-[1200px] mx-auto">
@@ -26,13 +41,13 @@ const Contact = () => {
                 </div>
             </div>
 
-            <form action="" method="post" className="p-6 flex flex-col justify-center max-w-[700px]">
+            <form action="" onSubmit={handleOnSubmit} method="post" className="p-6 flex flex-col justify-center max-w-[700px]">
                 <div className="flex flex-col">
-                <input type="name" name="name" id="name" placeholder="Full Name" className="w-100 mt-2 py-3 px-3"/>
+                <input type="name" name="from_name" id="from_name" placeholder="Full Name" className="w-100 mt-2 py-3 px-3"/>
                 </div>
                 
                 <div className="flex flex-col mt-2">
-                <input type="email" name="email" id="email" placeholder="Email" className="w-100 mt-2 py-3 px-3"/>
+                <input type="email" name="from_email" id="from_email" placeholder="Email" className="w-100 mt-2 py-3 px-3"/>
                 </div>
                 <div className="flex flex-col mt-2">
                     <textarea name="message" id="message" placeholder="Your Message" className="w-100 mt-2 py-3 px-3"/>

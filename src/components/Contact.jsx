@@ -1,8 +1,8 @@
 import React from 'react'
 import emailjs from 'emailjs-com';
-const SERVICE_ID= process.env.SERVICE_ID
-const TEMPLATE_ID= process.env.TEMPLATE_ID
-const PUBLIC_KEY= process.env.PUBLIC_KEY
+const SERVICE_ID = "service_d4hea3z"
+const TEMPLATE_ID = "template_dcxwywm"
+const PUBLIC_KEY = "rdctRYu3XA3TV4JiA"
 
 const Contact = () => {
     const handleOnSubmit = (e) => {

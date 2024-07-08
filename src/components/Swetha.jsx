@@ -5,10 +5,10 @@ import {AiFillLinkedin, AiFillGithub, AiFillInstagram} from 'react-icons/ai'
 
 const Swetha = () => {
   return (
-    <div id='home'>
+    <div id='home py-24'>
       <div className='my-7 sm:my-0 max-w-[1200px] h-auto mx-auto flex flex-col-reverse sm:flex-row justify-center align-center' >
           <div className= 'flex-col my-auto mx-auto'>
-            <div className='my-auto'>
+            <div className='my-auto pt-24 '>
                   <img className="w-[300px] sm:w-[500px] mx-auto-h-auto rounded-full py-5" src={img} alt="mybg"/>
               </div>
               <p className= 'md:text-3x1 sm:text-3xl text-xl py-5 font-bold text-gray-300'>

@@ -15,7 +15,7 @@ const Navbar = () => {
     return(
         <div className="text-gray-400 flex justify-between items-center max-w-[1240px] mx-auto h-24 px-4 text-lg fixed w-full bg-[#202121] z-50">
       
-            <h1 className="text-3xl font-bold primary-color ml-4">Swetha Vijayan
+            <h1 className="text-3xl font-bold primary-color ml-4">Personal Portfolio
             </h1>
             <ul className="hidden md:flex">
                 <li className="p-5"><a href="#home" className="flex items-center"><AiOutlineHome size={25} /><span className="ml-2 text-gray-400 text-xs">Home</span></a></li>
@@ -31,7 +31,7 @@ const Navbar = () => {
             <div className={nav ?'text-gray-300 fixed h-full left-0 top-0 w[60%] border-r border-r-gray-900 bg-[#202121] ease-in-out duration-500'
                 :"fixed left-[-100%]"}>
                 
-            <h1 className="text-3xl primary-color m-4">Swetha Vijayan
+            <h1 className="text-3xl primary-color m-4">Personal Portfolio
             </h1>
                 <ul className="flex md:hidden flex-col">
                     <li className="p-5"><a href="#home" className="flex items-center"><AiOutlineHome size={25} /><span className="ml-2 text-gray-400 text-xs">Home</span></a></li>
